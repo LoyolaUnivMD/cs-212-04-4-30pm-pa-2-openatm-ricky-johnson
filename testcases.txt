@@ -1,0 +1,23 @@
+Test Cases
+
+Account:
+initial deposit = 100.00
+name = Bob
+
+Test Case 1 (isOwner):
+input: name = Bill
+return: false
+
+Test Case 2 (deposit):
+input: 50.50
+return: 150.50
+
+Test Case 3 (withdraw):
+input: 25.50
+return: 74.50
+
+Test Case 4 (getStats):
+return: [100.00, min, max, average transaction (of the last 5 transactions)]
+
+Test Case 5 (display):
+return: last 5 deposits or withdrawals (or fewer if they have not made 5 yet)
