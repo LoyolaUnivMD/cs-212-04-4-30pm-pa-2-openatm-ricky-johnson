@@ -2,16 +2,16 @@ PA2 Design
 
 Data Members:
 private double[] transactions
-private string name
+private String name
 private double initialDeposit
 
 
 Constructors:
 General Constructor:
-public OpenATM(double[] transactions, string name, double initialDeposit)
+public Account(double[] transactions, String name, double initialDeposit)
 
 Default Constructor:
-public OpenATM()
+public Account()
     double[] transactions = new double[5]
     string name = "Unknown"
     double initialDeposit = 100
@@ -22,6 +22,7 @@ method name: isOwner
 parameter: String name
 purpose: determine if an account is owned by a given person
 return: boolean
+algorithm: compares name to names in array
 
 method name: deposit
 purpose: initiate a deposit
