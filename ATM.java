@@ -31,7 +31,7 @@ public class ATM {
         // Ask user for account number
         System.out.println("Enter account number: ");
         int accountNumber = input.nextInt();
-        // Error check for input of 0. 0 is default value.
+        // Error check for input of 0. 0 is default value for accountNumbers array below.
         while (accountNumber <= 0) {
             System.out.println("\nAccount number must be a number larger than 0 and a whole number (no decimals).");
             System.out.println("Enter account number: ");
@@ -48,6 +48,7 @@ public class ATM {
         for (int i = 0; i < accountNumbers.length; i++) {
             if (accountNumbers[i] == 0) {   // 0 is default value. Any index with 0 is space for a new account.
                 accountNumbers[i] = accountNumber;  // index of accountNumbers becomes user entered account number
+                System.out.println("Account Number: " + accountNumber); // display user's account number
                 break;  // break loop so other indexes with 0 are not replaced
             }
         }
@@ -61,20 +62,34 @@ public class ATM {
             }
         }
 
-        System.out.println(Arrays.toString(accountNumbers));
-        System.out.println(Arrays.toString(accountObjects));
+        //System.out.println(Arrays.toString(accountObjects));
+
+
+        for (int i = 0; i < accountObjects.length; i++) {
+            if (accountNumber == accountObjects[i].getAccountNumber()) {
+                //System.out.println("working");
+                //break;
+
+                // Ask user for menu selection
+                System.out.println("Deposit (d), Withdraw (w), Account Statistics (as) , or Leave (l)?: ");
+                String selection = input.nextLine();
+                selection = selection.toLowerCase();
+
+                // While loop to make menu work
+                while (!selection.equals("l")) {
+                    if (selection.equals("d")) {
+                        System.out.println("working");
+                    }
+
+                }
+            }
+
+        }
 
 
 
 
 
-        // Menu
-        //while (!Objects.equals(name, "exit")) {
-
-
-
-
-        //}
 
 
     } // end of main method

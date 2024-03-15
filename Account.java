@@ -33,6 +33,16 @@ public class Account {
         //if
    // }
 
+    // getAccountNumber
+    public int getAccountNumber() {
+        return accountNumber;
+    }
+
+    public void welcomeUser() {
+        System.out.println("Welcome, " + firstName + " " + lastName + ".");
+    }
+
+
 
 
 

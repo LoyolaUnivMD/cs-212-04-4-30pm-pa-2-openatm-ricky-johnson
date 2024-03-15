@@ -1,0 +1,47 @@
+ask user for first name, last name, and account number
+create account objects array
+create variable accountExists (boolean)
+
+for account in account objects array
+    check if account number entered by user is equal to an account number linked with an object
+    in account objects array (if accountNumber == accountObjects[i].getAccountNumber)
+        accountExists = true
+    else
+        accountExists = false
+
+if accountExists = false
+    for account in account objects array
+        if index == null
+            create new account object and add to account objects array
+            accountExists = true
+            break
+        else
+            accountExists = false
+    if accountExists = false
+        go back to beginning and ask for name and account number
+
+create proceed variable = true (boolean)
+
+if accountExists = true
+    for account in account objects array
+        if account number == accountObjects[i].getAccountNumber
+            print accountObject[i] account number
+            ask user to deposit, withdraw, get statistics, view recent transactions, or exit
+            while proceed = true
+                if user selects deposit
+                    call deposit method
+                else if user selects withdraw
+                    call withdraw method
+                else if user selects get statistics
+                     call get statistics method
+                else if user selects view recent transactions
+                    call recent transactions method
+                else
+                    call method that changes proceed to false to break while loop
+
+ask for first name, last name, and account number again
+
+
+
+
+
