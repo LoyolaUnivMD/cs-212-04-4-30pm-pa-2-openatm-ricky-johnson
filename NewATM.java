@@ -1,4 +1,13 @@
-
+/**
+ * Programmer: @author RickyJohnson
+ * Course: CS 212, Mr. John
+ * Due Date: 3/15/24
+ * Programming Assignment: 2
+ * Problem Statement: add some functionality to your ATM from lab 3. Your ATM will now support multiple accounts and even let you view your account history.
+ * Input: deposit amount, withdraw amount, first name, last name, account number, menu selection
+ * Output: balance, stats
+ * Credits:
+ */
 
 import java.text.DecimalFormat;
 import java.util.Arrays;
@@ -94,7 +103,7 @@ public class NewATM {
                             }
                             else if (selection == 2) {
                                 accountObjects[i].withdraw();
-                                accountObjects[i].addToTransactionTypes();
+                                accountObjects[i].addToTransactionValues();
                             }
                             else if (selection == 3) {
                                 accountObjects[i].getStats();

@@ -1,3 +1,18 @@
+/**
+ * Programmer: @author RickyJohnson
+ * Course: CS 212, Mr. John
+ * Due Date: 3/15/24
+ * Programming Assignment: 2
+ * Problem Statement: add some functionality to your ATM from lab 3. Your ATM will now support multiple accounts and even let you view your account history.
+ * Input: deposit amount, withdraw amount, first name, last name, account number, menu selection
+ * Output: balance, stats
+ * Credits:
+ */
+
+
+
+
+
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.text.DecimalFormat;
@@ -16,7 +31,7 @@ public class Account {
     private int accountNumber;
     private double balance;
     private String transactionTypes;
-    private  ArrayList<Double> transactionValues;
+    private double[] transactionValues;
     private double depositValue;
     private double withdrawValue;
     private String withdrawType;
@@ -39,6 +54,7 @@ public class Account {
         this.withdrawValue = 0;
         this.withdrawType = "Withdraw";
         this.transactionTypes = "None";
+        this.transactionValues = new double[5];
     }   // End of Default Constructor
 
 
@@ -84,6 +100,8 @@ public class Account {
         // Update balance with new deposit value
         depositCalculation();
 
+        // Add deposit to transactionValues
+        //transactionValues.add(depositValue);
 
         // Print updated balance after deposit with currency formatting
         System.out.println("\nYour new balance is: " + currency.format(balance));
@@ -139,23 +157,27 @@ public class Account {
         System.out.println("\nYour new balance is: " + currency.format(balance));
         System.out.println("---------------------------------------------------------------------------------");
 
-        // Add withdraw to transactionTypes
-        //addToTransactionTypes();
+        // Add withdraw to transactionValues
+        // addToTransactionValues();
+
 
         return withdrawValue;
     } // End of withdraw method
 
 
     // addToTransactionTypes
-    public void addToTransactionTypes() {
-       // transactionTypes.add("Withdraw");
-        //return transactionTypes;
+    public void addToTransactionValues() {
+       for (int i = 0; i < transactionValues.length; i++) {
+           if (transactionValues[i] == 0.0) {
+               transactionValues[i] = withdrawValue;
+           }
+       }
     }
 
     // getStats
     public void getStats() {
         System.out.println("Your current balance: " + currency.format(balance));
-        System.out.println(transactionTypes);
+        System.out.println(transactionValues);
 
     }
 

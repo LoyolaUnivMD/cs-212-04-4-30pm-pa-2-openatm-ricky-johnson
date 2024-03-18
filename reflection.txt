@@ -1,0 +1,27 @@
+What is the most challenging thing you experienced?
+     Classes and OOP. The more I use them, the more confused I get. This will likely be my answer to this question
+     for a while.
+
+How did you overcome it?
+    I did not. I no longer have time to work on this assignment. If I wait any longer to submit, the late penalty applied
+    to a fully functioning program would likely net me a similar score to what I am submitting now. I have other assignments
+    I need to work on. Hopefully, I will have time to come back to this one and understand my mistakes.
+
+Anything you would do differently given what you know now.
+    No idea. I did not learn much from this assignment.
+
+Was it helpful to build on a project that you already built in lab?
+    In this case, no. When I first started this assignment, I thought it would be helpful. However, adding to the previous
+    version of this project has created a program that is too large for me to comprehend at my current understanding of
+    classes and OOP.
+
+Are you becoming more comfortable with classes?
+    I do not think so. I feel my knowledge of them at best is the same. At worst, my understanding of classes and
+    programming logic is regressing. I feel that my ability to create a logical design and program is worse than it was
+    by the end of CS151 last semester.
+
+How did you feel about arrays? Were there things about them that you would like to overcome?
+    I am not a fan of arrays right now. From my current understanding of arrays and array lists, it seems that array lists
+    are more useful. Arrays feel limited in their use. The inability to append values is also annoying. However, we only
+    briefly talked about array lists in class. So, I do not know enough information about them to know my true opinion.
+
