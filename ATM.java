@@ -78,7 +78,7 @@ public class ATM {
                 // While loop to make menu work
                 while (!selection.equals("l")) {
                     if (selection.equals("d")) {
-                        System.out.println("working");
+
                     }
 
                 }

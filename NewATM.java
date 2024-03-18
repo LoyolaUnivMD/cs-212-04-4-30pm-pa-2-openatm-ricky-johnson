@@ -90,13 +90,14 @@ public class NewATM {
                             int selection = input.nextInt();
 
                             if (selection == 1) {
-                                System.out.println("//call deposit method");
+                                accountObjects[i].deposit();
                             }
                             else if (selection == 2) {
-                                // call withdraw method
+                                accountObjects[i].withdraw();
+                                accountObjects[i].addToTransactionTypes();
                             }
                             else if (selection == 3) {
-                                // call get statistics method
+                                accountObjects[i].getStats();
                             }
                             else if (selection == 4) {
                                 // call recent transaction method
